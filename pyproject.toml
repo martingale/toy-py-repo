@@ -1,19 +1,19 @@
 [tool.pdm]
 [tool.pdm.dev-dependencies]
 test = [
-    "pytest>=7.2.2",
+    "pytest>=7.3.1",
 ]
 workflow = [
-    "pre-commit>=3.2.1",
-    "pdm>=2.4.9",
+    "pre-commit>=3.2.2",
+    "pdm>=2.5.2",
 ]
 
 [project]
-name = "template-python"
+name = "toy-py-repo"
 version = "0.1.0"
 description = ""
 authors = [
-    {name = "oedokumaci", email = "oral.ersoy.dokumaci@gmail.com"},
+    {name = "martingale", email = "harunozkan@gmail.com"},
 ]
 dependencies = [
     "typer>=0.7.0",
@@ -24,5 +24,5 @@ readme = "README.md"
 license = {text = "MIT"}
 
 [build-system]
-requires = ["pdm-backend"]
-build-backend = "pdm.backend"
+requires = ["pdm-pep517>=1.0"]
+build-backend = "pdm.pep517.api"
